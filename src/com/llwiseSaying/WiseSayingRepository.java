@@ -11,8 +11,15 @@ public class WiseSayingRepository {
     private int lastId = 0;
     private String DB_PATH = "db/wiseSaying";
 
-    public WiseSayingRepository(){
+    public WiseSayingRepository() {
+        initDataDir();
+    }
 
+    private void initDataDir() {
+        File dir = new File(DB_PATH);
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
     }
 
     public WiseSaying save(String content, String author) {
@@ -70,7 +77,7 @@ public class WiseSayingRepository {
         return isRemoved;
     }
 
-    public void update(int id, String content, String author) {
+    public void modify(int id, String content, String author) {
         WiseSaying wiseSaying = findById(id);
         if (wiseSaying != null) {
             wiseSaying.setContent(content);
@@ -94,5 +101,38 @@ public class WiseSayingRepository {
         }
     }
 
-    public void
+    public void build(){
+        String filePath = DB_PATH + "/data.json";
+        try{
+            FileWriter writer = new FileWriter(filePath);
+            writer.write("[\n");
+
+            for(int i=0; i < wiseSayings.size()-1; i++){
+                if( i < wiseSayings.size()-1) {
+                    String json = """
+                            {
+                                "id": %d,
+                                "content": "%s",
+                                "author" : %s
+                            },
+                            """.formatted(wiseSayings.get(i).getId(), wiseSayings.get(i).getContent(), wiseSayings.get(i).getAuthor());
+                    writer.write(json);
+                } else{
+                    String json = """
+                            {
+                                "id": %d,
+                                "content": "%s",
+                                "author" : %s
+                            }
+                            """.formatted(wiseSayings.get(i).getId(), wiseSayings.get(i).getContent(), wiseSayings.get(i).getAuthor());
+                    writer.write(json);
+                }
+
+                writer.write("\n]");
+                writer.close();
+            }
+        } catch (IOException e){
+            System.out.println("빌드 중 오류가 발생");
+        }
+    }
 }

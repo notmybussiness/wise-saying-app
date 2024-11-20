@@ -20,7 +20,7 @@ public class WiseSayingController {
         String author = scanner.nextLine().trim();
 
         WiseSaying wiseSaying = wiseSayingService.create(content, author);
-        System.out.printf("%d번 명언이 등록되었습니다.\n", wiseSaying.getId());
+        System.out.printf("%d번 명언이 등록되었습니다.%n", wiseSaying.getId());
     }
 
     public void list() {
@@ -42,9 +42,9 @@ public class WiseSayingController {
         int id = Integer.parseInt(scanner.nextLine());
 
         if (wiseSayingService.remove(id)) {
-            System.out.printf("%d번 명언이 삭제되었습니다.\n", id);
+            System.out.println("%d번 명언이 삭제되었습니다.".formatted(id));
         } else {
-            System.out.printf("%d번 명언은 존재하지 않습니다.\n", id);
+            System.out.println("%d번 명언은 존재하지 않습니다.".formatted(id));
         }
     }
 
@@ -54,7 +54,7 @@ public class WiseSayingController {
 
         WiseSaying wiseSaying = wiseSayingService.get(id);
         if (wiseSaying == null) {
-            System.out.printf("%d번 명언은 존재하지 않습니다.\n", id);
+            System.out.println("%d번 명언은 존재하지 않습니다.".formatted(id));
             return;
         }
 
@@ -67,7 +67,12 @@ public class WiseSayingController {
         String author = scanner.nextLine().trim();
 
         if (wiseSayingService.modify(id, content, author)) {
-            System.out.printf("%d번 명언이 수정되었습니다.\n", id);
+            System.out.println("%d번 명언이 수정되었습니다.".formatted(id));
         }
+    }
+
+    public void build(){
+        wiseSayingService.build();
+        System.out.println("data.json 파일의 내용이 갱신되었습니다.");
     }
 }

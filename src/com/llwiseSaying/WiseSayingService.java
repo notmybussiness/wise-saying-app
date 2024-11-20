@@ -30,7 +30,12 @@ public class WiseSayingService {
         if (wiseSaying == null) {
             return false;
         }
-        wiseSayingRepository.update(id, content, author);
+        wiseSayingRepository.modify(id, content, author);
         return true;
     }
+
+    public void build(){
+        wiseSayingRepository.build();
+    }
+
 }

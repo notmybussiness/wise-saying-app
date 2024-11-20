@@ -35,9 +35,10 @@ class App {
                 case "수정":
                     wiseSayingController.modify();
                     break;
-                default:
-                    System.out.println("잘못된 명령입니다.");
+                case "빌드":
+                    wiseSayingController.build();
                     break;
+
             }
         }
     }
