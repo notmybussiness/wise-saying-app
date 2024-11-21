@@ -22,12 +22,21 @@ class App {
                 break;
             }
 
+            if(command.contains("?")){
+              String[] query = command.split("\\?");
+              String commandName = query[0];
+              String commandSpecific = query[1];
+              if(commandName.equals("목록")){
+                  wiseSayingController.list(commandSpecific);
+              }
+            }
+
             switch (command) {
                 case "등록":
                     wiseSayingController.write();
                     break;
                 case "목록":
-                    wiseSayingController.list();
+                    wiseSayingController.list(null);
                     break;
                 case "삭제":
                     wiseSayingController.remove();

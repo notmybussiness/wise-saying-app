@@ -23,12 +23,45 @@ public class WiseSayingController {
         System.out.printf("%d번 명언이 등록되었습니다.%n", wiseSaying.getId());
     }
 
-    public void list() {
-        List<WiseSaying> wiseSayings = wiseSayingService.getList();
+    public void list(String query) {
+        //목록출력
+        if (query == null || query.isEmpty()) {
+            List<WiseSaying> wiseSayings = wiseSayingService.getList();
 
+            System.out.println("번호 / 작가 / 명언");
+            System.out.println("----------------------");
+
+            for (WiseSaying wiseSaying : wiseSayings) {
+                System.out.printf("%d / %s / %s\n",
+                        wiseSaying.getId(),
+                        wiseSaying.getAuthor(),
+                        wiseSaying.getContent());
+            }
+            return;
+        }
+
+        //검색
+        String[] params = query.split("&");
+        String keywordType = "";
+        String keyword = "";
+        for(String param: params) {
+            String[] keyVal = param.split("=");
+            if(keyVal[0].equals("keywordType")){
+                keywordType = keyVal[1];
+            } else if(keyVal[0].equals("keyword")){
+                keyword = keyVal[1];
+            }
+        }
+
+        List<WiseSaying> wiseSayings = wiseSayingService.getList();
+        System.out.println("-".repeat(30));
+        System.out.println("검색타입 : " + keywordType);
+        System.out.println("검색어 : " + keyword);
+        System.out.println("-".repeat(30));
         System.out.println("번호 / 작가 / 명언");
         System.out.println("-".repeat(30));
 
+        List<WiseSaying> searchResults = wiseSayingService.getListByKey(keywordType, keyword);
         for (WiseSaying wiseSaying : wiseSayings) {
             System.out.printf("%d / %s / %s\n",
                     wiseSaying.getId(),

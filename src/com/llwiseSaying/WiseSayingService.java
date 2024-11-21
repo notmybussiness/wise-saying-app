@@ -13,8 +13,13 @@ public class WiseSayingService {
         return wiseSayingRepository.save(content, author);
     }
 
-    public List<WiseSaying> getList() {
+    //목록 수정중
+    public List<WiseSaying> getList(){
         return wiseSayingRepository.findAll();
+    }
+
+    public List<WiseSaying> getListByKey(String keywordType, String keyword) {
+        return wiseSayingRepository.findByKey(keywordType, keyword);
     }
 
     public WiseSaying get(int id) {
