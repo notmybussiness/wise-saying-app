@@ -1,4 +1,5 @@
-package com.llwiseSaying;
+package com.ll.wiseSaying;
+
 
 import java.io.File;
 import java.io.FileWriter;

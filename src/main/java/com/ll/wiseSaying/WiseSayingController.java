@@ -1,4 +1,5 @@
-package com.llwiseSaying;
+package com.ll.wiseSaying;
+
 
 import java.util.List;
 import java.util.Scanner;
@@ -70,24 +71,25 @@ public class WiseSayingController {
         }
     }
 
-    public void remove() {
-        System.out.print("삭제할 명언 번호 : ");
-        int id = Integer.parseInt(scanner.nextLine());
-
-        if (wiseSayingService.remove(id)) {
-            System.out.println("%d번 명언이 삭제되었습니다.".formatted(id));
+    public void remove(String commandspecific) {
+//        System.out.print("삭제할 명언 번호 : ");
+//        int id = Integer.parseInt(scanner.nextLine());
+        int removeId = Integer.parseInt(commandspecific.split("=")[1]);
+        if (wiseSayingService.remove(removeId)) {
+            System.out.println("%d번 명언이 삭제되었습니다.".formatted(removeId));
         } else {
-            System.out.println("%d번 명언은 존재하지 않습니다.".formatted(id));
+            System.out.println("%d번 명언은 존재하지 않습니다.".formatted(removeId));
         }
     }
 
-    public void modify() {
-        System.out.print("수정할 명언 번호 : ");
-        int id = Integer.parseInt(scanner.nextLine());
+    public void modify(String commandspecific) {
+//        System.out.print("수정할 명언 번호 : ");
+//        int id = Integer.parseInt(scanner.nextLine());
+        int modifyId = Integer.parseInt(commandspecific.split("=")[1]);
 
-        WiseSaying wiseSaying = wiseSayingService.get(id);
+        WiseSaying wiseSaying = wiseSayingService.get(modifyId);
         if (wiseSaying == null) {
-            System.out.println("%d번 명언은 존재하지 않습니다.".formatted(id));
+            System.out.println("%d번 명언은 존재하지 않습니다.".formatted(modifyId));
             return;
         }
 
@@ -99,8 +101,8 @@ public class WiseSayingController {
         System.out.print("작가 : ");
         String author = scanner.nextLine().trim();
 
-        if (wiseSayingService.modify(id, content, author)) {
-            System.out.println("%d번 명언이 수정되었습니다.".formatted(id));
+        if (wiseSayingService.modify(modifyId, content, author)) {
+            System.out.println("%d번 명언이 수정되었습니다.".formatted(modifyId));
         }
     }
 

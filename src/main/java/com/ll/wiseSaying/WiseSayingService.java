@@ -1,4 +1,5 @@
-package com.llwiseSaying;
+package com.ll.wiseSaying;
+
 
 import java.util.List;
 

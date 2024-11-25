@@ -2,25 +2,13 @@ plugins {
     id 'java'
 }
 
-group 'com.llwiseSaying'
+group 'com.ll'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
-// 소스 폴더 구조 설정
-sourceSets {
-    main {
-        java {
-            srcDirs = ['src']
-        }
-    }
-    test {
-        java {
-            srcDirs = ['src/test/java']
-        }
-    }
-}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'

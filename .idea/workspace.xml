@@ -5,21 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3613222c-50f1-4150-a65c-97cc1e555222" name="변경" comment="변경">
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/llwiseSaying/Test/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/llwiseSaying/Test/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/zetto.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/wiseSaying/1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/wiseSaying/2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/wiseSaying1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/llwiseSaying/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wise-word.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/TestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/WiseControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSaying.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSayingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSayingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSayingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/wiseSaying/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/Test/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/Test/TestUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSaying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSayingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSayingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSayingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,12 +112,14 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Gradle.Build wise-word.executor": "Run",
+    "Gradle.wise-word [:com.ll.wiseSaying.Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/zetto",
+    "last_directory_selection": "C:/Users/zetto/IdeaProjects/wise-word/src/com/llwiseSaying/Test",
+    "last_opened_file_path": "C:/Users/zetto/IdeaProjects/wise-word",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,15 +134,22 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.llwiseSaying.Test" />
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\zetto\IdeaProjects\wise-word\src\com\llwiseSaying" />
-      <recent name="C:\Users\zetto\IdeaProjects\wise-word\db\wiseSaying" />
+      <recent name="C:\Users\zetto\IdeaProjects\wise-word\src\Test\java\com\ll\wiseSaying" />
+      <recent name="C:\Users\zetto\IdeaProjects\wise-word\src\main\java\com\ll\wiseSaying" />
+      <recent name="C:\Users\zetto\IdeaProjects\wise-word\src\Test\java.com.ll.wiseSaying" />
+      <recent name="C:\Users\zetto\IdeaProjects\wise-word\src\main" />
+      <recent name="C:\Users\zetto\IdeaProjects\wise-word\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.ll.wiseSaying.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.llwiseSaying.Main" />
       <module name="wise-word" />
@@ -134,8 +157,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.ll.wiseSaying.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ll.wiseSaying.Main" />
+      <module name="wise-word.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.wiseSaying.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.ll.wiseSaying.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -166,7 +203,12 @@
       <workItem from="1732260069549" duration="7000" />
       <workItem from="1732262691279" duration="113000" />
       <workItem from="1732492894619" duration="706000" />
-      <workItem from="1732493783034" duration="633000" />
+      <workItem from="1732493783034" duration="7019000" />
+      <workItem from="1732501082721" duration="2666000" />
+      <workItem from="1732514441888" duration="499000" />
+      <workItem from="1732514951525" duration="82000" />
+      <workItem from="1732515040649" duration="208000" />
+      <workItem from="1732515300511" duration="1936000" />
     </task>
     <servers />
   </component>
