@@ -1,4 +1,4 @@
-import com.llwiseSaying.WiseSayingController;
+package com.llwiseSaying;
 
 import java.util.Scanner;
 
