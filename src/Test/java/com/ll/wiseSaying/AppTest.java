@@ -14,7 +14,7 @@ public class AppTest {
 
         try {
             // Scanner를 인자로 받는 App 생성자 사용
-            new com.llwiseSaying.Test.App(scanner).run();
+            new App(scanner).run();  // 이 부분을 수정했습니다
 
             return output.toString();
         } finally {

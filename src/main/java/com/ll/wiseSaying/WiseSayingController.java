@@ -43,14 +43,14 @@ public class WiseSayingController {
 
         //검색
         String[] params = query.split("&");
-        String keywordType = "";
-        String keyword = "";
+        String keywordType = "";  // String 변수로 선언
+        String keyword = "";      // String 변수로 선언
         for(String param: params) {
             String[] keyVal = param.split("=");
-            if(keyVal[0].equals("keywordType")){
-                keywordType = keyVal[1];
-            } else if(keyVal[0].equals("keyword")){
-                keyword = keyVal[1];
+            if(keyVal[0].equals("keywordType")) {
+                keywordType = keyVal[1];  // 직접 값 할당
+            } else if(keyVal[0].equals("keyword")) {
+                keyword = keyVal[1];      // 직접 값 할당
             }
         }
 
@@ -63,7 +63,7 @@ public class WiseSayingController {
         System.out.println("-".repeat(30));
 
         List<WiseSaying> searchResults = wiseSayingService.getListByKey(keywordType, keyword);
-        for (WiseSaying wiseSaying : wiseSayings) {
+        for (WiseSaying wiseSaying : searchResults) {
             System.out.printf("%d / %s / %s\n",
                     wiseSaying.getId(),
                     wiseSaying.getAuthor(),

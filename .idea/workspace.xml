@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3613222c-50f1-4150-a65c-97cc1e555222" name="변경" comment="변경">
-      <change afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/TestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/WiseControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,23 +14,25 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSaying.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSayingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSayingRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/llwiseSaying/WiseSayingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ll/wiseSaying/WiseSayingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ll/wiseSaying/WiseSayingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ll/wiseSaying/WiseSayingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ll/wiseSaying/WiseSayingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/wiseSaying/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/wiseSaying/1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/Test/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/Test/TestUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSaying.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSayingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSayingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/llwiseSaying/WiseSayingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/wiseSaying/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/wiseSaying/9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/WiseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/WiseControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/wiseSaying/WiseSayingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,9 +111,11 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Gradle.Build wise-word.executor": "Run",
+    "Gradle.WiseControllerTest.executor": "Run",
     "Gradle.wise-word [:com.ll.wiseSaying.Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -129,7 +130,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -149,7 +150,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.ll.wiseSaying.Main">
+  <component name="RunManager" selected="Gradle.WiseControllerTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.llwiseSaying.Main" />
       <module name="wise-word" />
@@ -170,8 +171,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WiseControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.ll.wiseSaying.WiseControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WiseControllerTest" />
         <item itemvalue="Application.com.ll.wiseSaying.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -208,7 +234,7 @@
       <workItem from="1732514441888" duration="499000" />
       <workItem from="1732514951525" duration="82000" />
       <workItem from="1732515040649" duration="208000" />
-      <workItem from="1732515300511" duration="1936000" />
+      <workItem from="1732515300511" duration="14767000" />
     </task>
     <servers />
   </component>
@@ -237,6 +263,11 @@
           <url>file://$PROJECT_DIR$/../wise_word/src/main/java/com/ll/wiseSaying/WiseSayingRepository.java</url>
           <line>36</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test/java/com/ll/wiseSaying/WiseControllerTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
