@@ -3,6 +3,7 @@ package com.ll.wiseSaying;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class WiseSayingController {
     private final Scanner scanner;
@@ -25,14 +26,88 @@ public class WiseSayingController {
     }
 
     public void list(String query) {
-        //목록출력
+        //입력이 목록 단독일 때
+        int page = 1;
+
         if (query == null || query.isEmpty()) {
             List<WiseSaying> wiseSayings = wiseSayingService.getList();
+
+            int totalCount = wiseSayings.size();
+            int totalPages = (totalCount % 5 == 0) ? (totalCount / 5) : (totalCount / 5 + 1); // 5로 나누어떨어지면 totalCount/5 안나눠떨어지면 올림하려고
+
+            List<WiseSaying> currentpage = wiseSayings.stream()
+                                                    .sorted((a,b) -> b.getId()-a.getId()) // 역순으로 정렬후
+                                                    .skip((page-1)*5) // 현재페이지를보여주기위해 앞쪽 스킵
+                                                    .limit(5) // 5개까지만 보여주기 부족해도 5개이하로보여주고 5개이상이어도 5개에서 끊김
+                                                    .collect(Collectors.toList());
 
             System.out.println("번호 / 작가 / 명언");
             System.out.println("----------------------");
 
-            for (WiseSaying wiseSaying : wiseSayings) {
+            for (WiseSaying wiseSaying : currentpage) {
+                System.out.printf("%d / %s / %s\n",
+                        wiseSaying.getId(),
+                        wiseSaying.getAuthor(),
+                        wiseSaying.getContent());
+            }
+            System.out.println("----------------------");
+            System.out.printf("페이지 : [%d] / %d\n", page, totalPages);
+            return;
+        }
+        // page = n
+        if(query.startsWith("page")){
+            //p-0,a-1,g-2,e-3,=-4 이라서 5번째부터 끝까지가 string으로 표현된 숫자임
+            // string -> int로 변환 Integer.parsInt();
+            List<WiseSaying> wiseSayings = wiseSayingService.getList();
+            page = Integer.parseInt(query.substring(5));
+
+            int totalCount = wiseSayings.size();
+            int totalPages = (totalCount % 5 == 0) ? (totalCount / 5) : (totalCount / 5 + 1); // 5로 나누어떨어지면 totalCount/5 안나눠떨어지면 올림하려고
+
+            List<WiseSaying> currentpage = wiseSayings.stream()
+                    .sorted((a,b) -> b.getId()-a.getId()) // 역순으로 정렬후
+                    .skip((page-1)*5) // 현재페이지를보여주기위해 앞쪽 스킵
+                    .limit(5) // 5개까지만 보여주기 부족해도 5개이하로보여주고 5개이상이어도 5개에서 끊김
+                    .collect(Collectors.toList());
+
+            System.out.println("번호 / 작가 / 명언");
+            System.out.println("----------------------");
+            System.out.println(page);
+            for (WiseSaying wiseSaying : currentpage) {
+                System.out.printf("%d / %s / %s\n",
+                        wiseSaying.getId(),
+                        wiseSaying.getAuthor(),
+                        wiseSaying.getContent());
+            }
+            System.out.println("----------------------");
+            System.out.printf("페이지 : [%d] / %d\n", page, totalPages);
+            return;
+        }
+
+        //검색
+         if(query.contains("&")) {
+            String[] params = query.split("&");
+            String keywordType = "";  // String 변수로 선언
+            String keyword = "";      // String 변수로 선언
+            for (String param : params) {
+                String[] keyVal = param.split("=");
+                if (keyVal[0].equals("keywordType")) {
+                    keywordType = keyVal[1];  // 직접 값 할당
+                } else if (keyVal[0].equals("keyword")) {
+                    keyword = keyVal[1];      // 직접 값 할당
+                }
+            }
+
+            List<WiseSaying> wiseSayings = wiseSayingService.getList();
+            System.out.println("-".repeat(30));
+            System.out.println("검색타입 : " + keywordType);
+            System.out.println("검색어 : " + keyword);
+            System.out.println("-".repeat(30));
+            System.out.println("번호 / 작가 / 명언");
+            System.out.println("-".repeat(30));
+
+            List<WiseSaying> searchResults = wiseSayingService.getListByKey(keywordType, keyword);
+            for (WiseSaying wiseSaying : searchResults) {
                 System.out.printf("%d / %s / %s\n",
                         wiseSaying.getId(),
                         wiseSaying.getAuthor(),
@@ -41,34 +116,7 @@ public class WiseSayingController {
             return;
         }
 
-        //검색
-        String[] params = query.split("&");
-        String keywordType = "";  // String 변수로 선언
-        String keyword = "";      // String 변수로 선언
-        for(String param: params) {
-            String[] keyVal = param.split("=");
-            if(keyVal[0].equals("keywordType")) {
-                keywordType = keyVal[1];  // 직접 값 할당
-            } else if(keyVal[0].equals("keyword")) {
-                keyword = keyVal[1];      // 직접 값 할당
-            }
-        }
 
-        List<WiseSaying> wiseSayings = wiseSayingService.getList();
-        System.out.println("-".repeat(30));
-        System.out.println("검색타입 : " + keywordType);
-        System.out.println("검색어 : " + keyword);
-        System.out.println("-".repeat(30));
-        System.out.println("번호 / 작가 / 명언");
-        System.out.println("-".repeat(30));
-
-        List<WiseSaying> searchResults = wiseSayingService.getListByKey(keywordType, keyword);
-        for (WiseSaying wiseSaying : searchResults) {
-            System.out.printf("%d / %s / %s\n",
-                    wiseSaying.getId(),
-                    wiseSaying.getAuthor(),
-                    wiseSaying.getContent());
-        }
     }
 
     public void remove(String commandspecific) {
