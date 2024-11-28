@@ -10,7 +10,7 @@ public class App {
         scanner = new Scanner(System.in);
         wiseSayingController = new WiseSayingController(scanner);
     }
-
+    //AppTest 에서 인자로 scanner를 받기때문에 method Overloading
     public App(Scanner scanner) {
         this.scanner = scanner;
         this.wiseSayingController = new WiseSayingController(scanner);
